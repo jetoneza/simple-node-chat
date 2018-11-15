@@ -1,0 +1,15 @@
+{
+  "name": "node-chat",
+  "version": "0.0.1",
+  "description": "A simple Node chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jethro Ordaneza <jet.oneza@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
