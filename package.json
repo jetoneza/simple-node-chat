@@ -4,12 +4,16 @@
   "description": "A simple Node chat",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec node src/index.js",
+    "dev-server": "nodemon --exec node src/index.js",
+    "dev-client": "nodemon --exec node src/client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jethro Ordaneza <jet.oneza@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.18.6"
+  },
+  "dependencies": {
+    "socket.io": "^2.1.1"
   }
 }

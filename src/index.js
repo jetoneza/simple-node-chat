@@ -1,11 +1,6 @@
-const { getArguments, parseArguments } = require('./utils');
-const { getConfig, setConfig } = require('./config');
+const runServer = require('./bootstrap/server');
 
-const args = getArguments();
-
-args.forEach(arg => {
-  parseArguments(arg);
+runServer(data => {
+  const { host, port } = data;
+  console.log(`Server running at http://${host}:${port}`)
 });
-
-console.log('HOST:', getConfig('host'));
-console.log('PORT:', getConfig('port'));
